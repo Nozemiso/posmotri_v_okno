@@ -1,38 +1,110 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  block-size: 100%;
-}
+.visually-hidden {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
-  margin: auto;
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
+.content {
+    display: flex;
+    align-items: end;
+    width: 1440px;
+    height: 534px;
+    gap: 30px
 }
 
-ul,
-ol {
-  list-style: none;
+.title {
+    font-family: Oswald, sans-serif;
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 94%;
+    text-transform: uppercase;
+}
+
+.content__details{
+    width: 400px;
+}
+
+.content__accent {
+    color: #545050;
+}
+
+.content__list {
+    position: relative;
+    height: 298px;
+    overflow-y: scroll;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content__list-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.content__card-link {
+    text-decoration: none;
+    color: white;
+}
+
+.content__video-card-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content__video-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.content__video-card-description {
+    line-height: 16.2px;
+}
+
+.content__video-card-thumbnail {
+    width: 194px;
+    height: 103px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+.content__video-card-description-container {
+    width: auto;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-self: start;
+}
+
+.search-form__fieldset-title {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.result {
+    height: 456px;
+}
+
+.result__video-container {
+    position: relative;
+    width: 711px;
+    height: 386px;
+    margin-bottom: 16px;
+}
+
+.result__video {
+    width: 100%;
+    height: 100%;
 }
