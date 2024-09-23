@@ -231,7 +231,6 @@ fieldset {
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  position: absolute;
   inset: 1px 0 0 1px;
   content: "";
   display: block;
