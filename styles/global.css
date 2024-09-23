@@ -27,6 +27,7 @@ ul,
 ol,
 li,
 blockquote,
+section,
 fieldset {
   margin: 0;
   padding: 0;
@@ -35,8 +36,4 @@ fieldset {
 ul,
 ol {
   list-style: none;
-}
-
-fieldset {
-  border: none;
 }
