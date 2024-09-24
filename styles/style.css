@@ -203,6 +203,10 @@ fieldset {
   width: 399px;
 }
 
+.content__card-link:active {
+  background-color: #545050;
+}
+
 .content__card-link:focus {
   outline: none;
 }
